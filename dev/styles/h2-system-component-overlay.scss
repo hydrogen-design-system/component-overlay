@@ -25,11 +25,34 @@
 @use "../../core/defaults" as var;
 
 // Load the component so that its mixins can be accessed.
-@use "component-$COMP" as *;
+@use "component-overlay" as *;
 
 // Load the generic mixin with its respective theme variables.
-[data-h2-$COMP] {
-    @include h2-component-$COMP-generic();
+[data-h2-overlay] {
+    @include h2-component-overlay-generic();
 }
 
 // Load custom mixins here. Please refer to existing components for examples, as well as how to pass variables, maps, and functions. 
+[data-h2-overlay*="image"] {
+    @include h2-component-overlay-image();
+}
+
+[data-h2-overlay*="pattern"] {
+    @include h2-component-overlay-pattern();
+}
+
+@each $colorKey, $colorValue in maps.$colorMap {
+    [data-h2-overlay*="#{$colorKey}"] {
+        @include h2-component-overlay-color(
+            $color: $colorValue
+        );
+    }
+}
+
+@each $alphaKey, $alphaValue in maps.$opacityMap {
+    [data-h2-overlay*="#{$alphaKey}"] {
+        @include h2-component-overlay-opacity(
+            $opacity: $alphaValue
+        );
+    }
+}

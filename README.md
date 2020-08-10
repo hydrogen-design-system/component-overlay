@@ -29,7 +29,7 @@ Important files to pay attention to:
 - `package.json` (the details of the npm package for your component)
 - `README.md` (this file, please edit it to ensure other people can work with your component locally)
 
-# Hydrogen: $COMP
+# Hydrogen: overlay
 
 Hydrogen's components are built using [Gulp](https://gulpjs.com/), [Sass](https://sass-lang.com), [Autoprefixer](https://github.com/postcss/autoprefixer), and [CSSnano](https://cssnano.co/).
 
@@ -49,7 +49,7 @@ This component currently supports the following markup and/or frameworks:
 The core code for this component can be found in:
 - dev/markup/
 - dev/scripts/
-- dev/styles/_component-$COMP.scss
+- dev/styles/_component-overlay.scss
 
 You will need:
 - [Node](https://nodejs.org/en/)
