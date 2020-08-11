@@ -1,6 +1,6 @@
 {
   "name": "@hydrogen-design-system/component-overlay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hydrogen's overlay component.",
   "main": "npm.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "cash-dom": "^8.0.0"
   },
   "devDependencies": {
-    "@hydrogen-design-system/core": "0.0.22",
+    "@hydrogen-design-system/core": "0.0.23",
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
     "browserslist": "^4.8.2",

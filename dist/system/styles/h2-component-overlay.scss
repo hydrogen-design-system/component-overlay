@@ -41,7 +41,7 @@
     @include h2-component-overlay-pattern();
 }
 
-@each $colorKey, $colorValue in maps.$colorMap {
+@each $colorKey, $colorValue in maps.$color-map {
     [data-h2-overlay*="#{$colorKey}"] {
         @include h2-component-overlay-color(
             $color: $colorValue
@@ -49,7 +49,7 @@
     }
 }
 
-@each $alphaKey, $alphaValue in maps.$opacityMap {
+@each $alphaKey, $alphaValue in maps.$opacity-map {
     [data-h2-overlay*="#{$alphaKey}"] {
         @include h2-component-overlay-opacity(
             $opacity: $alphaValue
