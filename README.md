@@ -1,5 +1,9 @@
 # Hydrogen's overlay component
 
+<a href="https://www.npmjs.com/package/@hydrogen-design-system/component-overlay" title="Visit this package on NPM." target="_blank" rel="noreferrer">
+    <img alt="npm" src="https://img.shields.io/npm/v/@hydrogen-design-system/component-overlay?color=9864e8&label=release">
+</a>
+
 ## Installation
 
 You can install this component as a standalone package using `npm install @hydrogen-design-system/component-overlay --save-dev`
