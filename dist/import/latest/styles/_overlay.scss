@@ -34,21 +34,13 @@
   background-repeat: repeat;
 }
 
-@mixin h2-component-overlay-color(
-  $color
-) {
-
-  &::before {
-    background-color: $color;
-  }
-
-}
-
-@mixin h2-component-overlay-opacity(
+@mixin h2-component-overlay(
+  $color,
   $opacity
 ) {
 
   &::before {
+    background-color: $color;
     opacity: $opacity;
   }
 

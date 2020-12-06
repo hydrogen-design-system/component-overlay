@@ -2,14 +2,17 @@
   "majors": [
     {
       "release": 0,
+      "date": null,
       "changes": [],
       "minors": [
         {
           "release": 0,
+          "date": null,
           "changes": [],
           "patches": [
             {
               "release": 3,
+              "date": null,
               "changes": [
                 "Updates the H2 core from 0.0.34 => 0.0.37.",
                 "Updates the development and production tasks to include Babel, allowing for the component to be imported as a module or browser-ready JavaScript.",
@@ -19,6 +22,7 @@
             },
             {
               "release": 4,
+              "date": null,
               "changes": [
                 "Updates the H2 core from 0.0.37 => 0.0.38.",
                 "Reconfigures the build script to output into a new folder layout containing the version and latest code in matching structures.",
@@ -31,6 +35,17 @@
               "changes": [
                 "Updates the H2 core from 0.0.38 => 0.0.40.",
                 "Reworks and simplifies the development and build scripts to output both a module and instanced version of component scripts."
+              ]
+            },
+            {
+              "release": 6,
+              "date": "2020/DEC/06",
+              "changes": [
+                "Updates the H2 core from 0.0.40 => 0.0.42.",
+                "Adds support for light and dark variations of colors, as well as a gray scale. (gray-1 through gray-9)",
+                "Breaking: changes the way colors are referenced. (c1 -> theme-1)",
+                "Changes the way the overlay CSS is contructed to avoid overlap with the numeric values in color and opacity.",
+                "Removes the system SCSS file as it's no longer needed."
               ]
             }
           ]

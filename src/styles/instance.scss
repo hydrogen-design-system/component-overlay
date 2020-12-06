@@ -42,17 +42,12 @@
 }
 
 @each $colorKey, $colorValue in maps.$color-map {
-  [data-h2-overlay_VERSION*="#{$colorKey}"] {
-    @include h2-component-overlay-color(
-      $color: $colorValue
-    );
-  }
-}
-
-@each $alphaKey, $alphaValue in maps.$opacity-map {
-  [data-h2-overlay_VERSION*="#{$alphaKey}"] {
-    @include h2-component-overlay-opacity(
-      $opacity: $alphaValue
-    );
+  @each $alphaKey, $alphaValue in maps.$opacity-map {
+    [data-h2-overlay_VERSION*="#{$colorKey}, #{$alphaKey}"] {
+      @include h2-component-overlay(
+        $color: $colorValue,
+        $opacity: $alphaValue
+      );
+    }
   }
 }
