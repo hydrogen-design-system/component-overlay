@@ -45,3 +45,15 @@
   }
 
 }
+
+@mixin h2-component-overlay-gradient(
+  $gradient,
+  $opacity
+) {
+
+  &::before {
+    background-image: $gradient;
+    opacity: $opacity;
+  }
+
+}

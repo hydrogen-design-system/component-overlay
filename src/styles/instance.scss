@@ -51,3 +51,14 @@
     }
   }
 }
+
+@each $gradientKey, $gradientValue in maps.$gradient-map {
+  @each $alphaKey, $alphaValue in maps.$opacity-map {
+    [data-h2-overlay_VERSION*="#{$gradientKey}, #{$alphaKey}"] {
+      @include h2-component-overlay-gradient(
+        $gradient: $gradientValue,
+        $opacity: $alphaValue
+      );
+    }
+  }
+}
